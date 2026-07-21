@@ -119,5 +119,38 @@
     "source": "官方 X",
     "tag": "社区",
     "pushed": "digested"
+  },
+  {
+    "id": "c3153bcdfd03",
+    "ts": "2026-07-21T21:53:08+08:00",
+    "tier": "MEDIUM",
+    "title": "华硕成为活动设备支持方",
+    "summary": "华硕官方确认作为设备支持方全程陪伴AdventureX 2026，提供电脑等硬件后盾。",
+    "url": "https://weibo.com/1747360663/R9z9dCOUT",
+    "source": "微博",
+    "tag": "媒体",
+    "pushed": "pending"
+  },
+  {
+    "id": "a247742b2502",
+    "ts": "2026-07-21T21:53:08+08:00",
+    "tier": "MEDIUM",
+    "title": "华硕校园账号确认设备支持",
+    "summary": "华硕校园号详述设备支持细节，强调为青年创造者提供坚实后盾。",
+    "url": "https://weibo.com/2818994694/R97xMAJoi",
+    "source": "微博",
+    "tag": "媒体",
+    "pushed": "pending"
+  },
+  {
+    "id": "03c62c8a2b86",
+    "ts": "2026-07-21T21:53:08+08:00",
+    "tier": "MEDIUM",
+    "title": "TTC成为社区合作伙伴",
+    "summary": "TTC作为社区合作伙伴推广黑客松，提及奖金、补贴及软硬件支持等资源。",
+    "url": "https://weibo.com/5381601998/R70ogeAIF",
+    "source": "微博",
+    "tag": "社区",
+    "pushed": "pending"
   }
 ]
