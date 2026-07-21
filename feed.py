@@ -35,7 +35,8 @@ def key_of(url, title):
 
 def cmd_add(a):
     items = load()
-    k = key_of(a.url, a.title)
+    # 优先用显式传入的稳定 key(锚定原始候选),否则回退到 url+title
+    k = a.key if getattr(a, "key", None) else key_of(a.url, a.title)
     if any(it["id"] == k for it in items):
         print("dup")
         return
@@ -91,6 +92,7 @@ def main():
     a.add_argument("--source", default="")
     a.add_argument("--summary", default="")
     a.add_argument("--tag", default="")
+    a.add_argument("--key", default="")
     sub.add_parser("pending")
     sub.add_parser("mark-digested")
     sub.add_parser("stats")

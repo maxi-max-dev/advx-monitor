@@ -86,7 +86,8 @@ def gather_candidates(state):
             h = hashlib.sha1(txt.encode()).hexdigest()[:12]
             old = state["page_hashes"].get(url)
             if old and old != h:
-                cands.append({"title": f"{name} 页面内容有更新", "url": url,
+                # 标题带 hash,每次不同变更算独立候选,不会被去重吃掉
+                cands.append({"title": f"{name} 页面更新 {h}", "url": url,
                               "source": name, "snippet": "官方页面自上次扫描后发生变化，可能是新公告/嘉宾/日程。"})
             state["page_hashes"][url] = h
         except Exception as e:
@@ -101,7 +102,12 @@ def existing_keys():
 
 
 def key_of(url, title):
-    basis = (url or "").strip().lower() + "|" + title.strip().lower()
+    u = (url or "").strip().lower()
+    # 有路径的具体链接(推文/文章)按 url 唯一去重,不受 LLM 改写标题影响;
+    # 裸域名(官网首页等)才带上标题区分(页面变更候选已给标题加 hash 保证唯一)
+    from urllib.parse import urlparse
+    has_path = bool(urlparse(u).path.strip("/")) if u else False
+    basis = u if has_path else (u + "|" + title.strip().lower())
     return hashlib.sha1(basis.encode()).hexdigest()[:12]
 
 
@@ -142,12 +148,13 @@ def classify(cands, key):
     return []
 
 
-def feed_add(tier, title, url, source, summary, tag):
+def feed_add(tier, title, url, source, summary, tag, key):
     if DRY:
         log(f"[DRY] would add {tier} [{tag}] {title} :: {summary}")
         return
     subprocess.run([sys.executable, FEED_PY, "add", "--tier", tier, "--title", title,
-                    "--url", url, "--source", source, "--summary", summary, "--tag", tag],
+                    "--url", url, "--source", source, "--summary", summary, "--tag", tag,
+                    "--key", key],
                    check=False)
 
 
@@ -213,13 +220,14 @@ def main():
                 c = fresh[int(v["index"])]
             except (KeyError, ValueError, IndexError):
                 continue
+            ck = key_of(c["url"], c["title"])  # 稳定 key,锚定原始候选(不受 LLM 改写标题影响)
             tier = str(v.get("tier", "DROP")).upper()
             if tier not in ("HIGH", "MEDIUM"):
-                dropped.add(key_of(c["url"], c["title"]))  # 记住已判定为噪音,别反复重判
+                dropped.add(ck)  # 记住已判定为噪音,别反复重判
                 continue
             title = (v.get("title") or c["title"])[:40]
             summary, tag = v.get("summary", ""), v.get("tag", "")
-            feed_add(tier, title, c["url"], c["source"], summary, tag)
+            feed_add(tier, title, c["url"], c["source"], summary, tag, ck)
             if tier == "HIGH":
                 highs.append((c, title, summary, tag))
 
