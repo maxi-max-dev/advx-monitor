@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AdventureX 监控台</title>
+<style>
+  :root{
+    --bg:#0a0c10; --card:#14181f; --line:#232a34; --txt:#e6e9ef; --dim:#8b95a3;
+    --hi:#ff5c5c; --med:#ffb020; --acc:#5ec8ff; --good:#3ddc84;
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  body{margin:0;background:var(--bg);color:var(--txt);
+    font:15px/1.55 -apple-system,BlinkMacSystemFont,"PingFang SC","Segoe UI",Roboto,sans-serif;
+    padding:0 0 40px;max-width:760px;margin:0 auto}
+  header{padding:22px 18px 14px;position:sticky;top:0;background:linear-gradient(#0a0c10,#0a0c10ee);
+    backdrop-filter:blur(8px);z-index:5;border-bottom:1px solid var(--line)}
+  h1{margin:0;font-size:19px;letter-spacing:.5px;display:flex;align-items:center;gap:8px}
+  .live{width:8px;height:8px;border-radius:50%;background:var(--good);box-shadow:0 0 10px var(--good);
+    animation:pulse 1.6s infinite}
+  @keyframes pulse{50%{opacity:.35}}
+  .sub{color:var(--dim);font-size:12.5px;margin-top:5px}
+  .cd{display:flex;gap:10px;margin-top:12px}
+  .cd div{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:7px 12px;text-align:center;flex:1}
+  .cd b{display:block;font-size:20px;color:var(--acc)}
+  .cd span{font-size:10.5px;color:var(--dim)}
+  .filters{display:flex;gap:8px;padding:12px 18px 4px;flex-wrap:wrap}
+  .filters button{background:var(--card);border:1px solid var(--line);color:var(--dim);
+    padding:6px 13px;border-radius:20px;font-size:13px;cursor:pointer}
+  .filters button.on{color:var(--txt);border-color:var(--acc)}
+  #list{padding:8px 14px}
+  .item{background:var(--card);border:1px solid var(--line);border-left-width:3px;border-radius:12px;
+    padding:13px 15px;margin:10px 0;animation:in .3s ease}
+  @keyframes in{from{opacity:0;transform:translateY(6px)}}
+  .item.HIGH{border-left-color:var(--hi)}
+  .item.MEDIUM{border-left-color:var(--med)}
+  .row{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:5px}
+  .tags{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+  .badge{font-size:10.5px;font-weight:700;padding:2px 8px;border-radius:6px}
+  .badge.HIGH{background:#ff5c5c22;color:var(--hi)}
+  .badge.MEDIUM{background:#ffb02022;color:var(--med)}
+  .tag{font-size:11px;color:var(--acc);background:#5ec8ff15;padding:2px 7px;border-radius:6px}
+  .time{font-size:11px;color:var(--dim);white-space:nowrap}
+  .title{font-weight:600;font-size:15px;margin:2px 0}
+  .summary{color:#c3cad6;font-size:13.5px;margin:3px 0 6px}
+  .src{font-size:12px}
+  .src a{color:var(--acc);text-decoration:none}
+  .src .name{color:var(--dim)}
+  .empty{text-align:center;color:var(--dim);padding:50px 20px}
+  footer{text-align:center;color:var(--dim);font-size:11px;padding:20px}
+</style>
+</head>
+<body>
+<header>
+  <h1><span class="live"></span>AdventureX 监控台</h1>
+  <div class="sub" id="meta">全网信号 · 加载中…</div>
+  <div class="cd" id="cd"></div>
+</header>
+<div class="filters">
+  <button data-f="all" class="on">全部</button>
+  <button data-f="HIGH">🔴 重要</button>
+  <button data-f="MEDIUM">🟡 动态</button>
+</div>
+<div id="list"><div class="empty">加载中…</div></div>
+<footer>数据每 20 分钟自动刷新 · 泛音驾驶舱</footer>
+<script>
+const START = new Date("2026-07-22T09:00:00+08:00");
+let data = [], filter = "all";
+
+function countdown(){
+  const now = new Date(), d = START - now, el = document.getElementById("cd");
+  if(d <= 0){ el.innerHTML = '<div><b>进行中</b><span>AdventureX 2026</span></div>'; return; }
+  const day = Math.floor(d/864e5), h = Math.floor(d%864e5/36e5), m = Math.floor(d%36e5/6e4);
+  el.innerHTML = `<div><b>${day}</b><span>天</span></div><div><b>${h}</b><span>时</span></div><div><b>${m}</b><span>分</span></div>`;
+}
+
+function ago(iso){
+  const d = (Date.now() - new Date(iso))/6e4;
+  if(d < 1) return "刚刚"; if(d < 60) return Math.floor(d)+"分钟前";
+  if(d < 1440) return Math.floor(d/60)+"小时前"; return Math.floor(d/1440)+"天前";
+}
+
+function render(){
+  const list = document.getElementById("list");
+  let items = [...data].sort((a,b)=> b.ts.localeCompare(a.ts));
+  if(filter !== "all") items = items.filter(i=>i.tier===filter);
+  if(!items.length){ list.innerHTML = '<div class="empty">暂无信号，监控运行中…<br>有价值的动静会即时推送到飞书</div>'; return; }
+  list.innerHTML = items.map(i=>`
+    <div class="item ${i.tier}">
+      <div class="row">
+        <div class="tags">
+          <span class="badge ${i.tier}">${i.tier==="HIGH"?"重要":"动态"}</span>
+          ${i.tag?`<span class="tag">${i.tag}</span>`:""}
+        </div>
+        <span class="time">${ago(i.ts)}</span>
+      </div>
+      <div class="title">${i.title}</div>
+      ${i.summary?`<div class="summary">${i.summary}</div>`:""}
+      <div class="src"><span class="name">${i.source||"来源"}</span>${i.url?` · <a href="${i.url}" target="_blank">查看原文 ↗</a>`:""}</div>
+    </div>`).join("");
+}
+
+async function load(){
+  try{
+    const r = await fetch("feed.json?t="+Date.now());
+    data = await r.json();
+    document.getElementById("meta").textContent =
+      `全网信号 · 共 ${data.length} 条 · 重要 ${data.filter(i=>i.tier==="HIGH").length}`;
+  }catch(e){
+    document.getElementById("meta").textContent = "全网信号 · 等待首次扫描…";
+    data = [];
+  }
+  render();
+}
+
+document.querySelectorAll(".filters button").forEach(b=>b.onclick=()=>{
+  document.querySelectorAll(".filters button").forEach(x=>x.classList.remove("on"));
+  b.classList.add("on"); filter = b.dataset.f; render();
+});
+
+countdown(); load();
+setInterval(countdown, 30000);
+setInterval(load, 120000);
+</script>
+</body>
+</html>

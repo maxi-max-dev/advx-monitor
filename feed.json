@@ -1,0 +1,35 @@
+[
+  {
+    "id": "a689624306ae",
+    "ts": "2026-07-21T21:03:31+08:00",
+    "tier": "MEDIUM",
+    "title": "AdventureX 2026 定档 7/22–26 杭州未来科技城",
+    "summary": "地点：未来科技城学术交流中心 + 湖畔创新中心，主题「为创造，再一次信仰之跃」，800+ builders、72h、$150K+ 奖金。",
+    "url": "https://adventure-x.org",
+    "source": "官网",
+    "tag": "日程",
+    "pushed": "digested"
+  },
+  {
+    "id": "ece182717932",
+    "ts": "2026-07-21T21:03:31+08:00",
+    "tier": "MEDIUM",
+    "title": "开幕炉边对话嘉宾 赛前两周公布",
+    "summary": "官方称开幕式 fireside chat 嘉宾会在赛前两周放出，临近开幕是嘉宾名单的重点观察窗口。",
+    "url": "https://faq.adventure-x.org",
+    "source": "官方 FAQ",
+    "tag": "嘉宾",
+    "pushed": "digested"
+  },
+  {
+    "id": "87f28c7cefbd",
+    "ts": "2026-07-21T21:03:51+08:00",
+    "tier": "MEDIUM",
+    "title": "参赛者 7/22 当天 23:59 前须完成签到",
+    "summary": "签到硬死线在开幕当天 23:59，错过影响参赛资格，Max 到杭州先办这件事。",
+    "url": "https://adventure-x.org",
+    "source": "官方规则",
+    "tag": "签到",
+    "pushed": "digested"
+  }
+]
