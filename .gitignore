@@ -1,0 +1,6 @@
+scan.log
+launchd.out.log
+launchd.err.log
+scan_state.json
+__pycache__/
+*.pyc
