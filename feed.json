@@ -129,7 +129,7 @@
     "url": "https://weibo.com/1747360663/R9z9dCOUT",
     "source": "微博",
     "tag": "媒体",
-    "pushed": "pending"
+    "pushed": "digested"
   },
   {
     "id": "a247742b2502",
@@ -140,7 +140,7 @@
     "url": "https://weibo.com/2818994694/R97xMAJoi",
     "source": "微博",
     "tag": "媒体",
-    "pushed": "pending"
+    "pushed": "digested"
   },
   {
     "id": "03c62c8a2b86",
@@ -151,6 +151,6 @@
     "url": "https://weibo.com/5381601998/R70ogeAIF",
     "source": "微博",
     "tag": "社区",
-    "pushed": "pending"
+    "pushed": "digested"
   }
 ]
