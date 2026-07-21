@@ -51,8 +51,12 @@ def nvidia_key():
     return re.findall(r"nvapi-[A-Za-z0-9_-]+", t)[0]
 
 
+UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
+      "(KHTML, like Gecko) Chrome/126.0 Safari/537.36")
+
+
 def fetch(url, timeout=20):
-    req = urllib.request.Request(url, headers={"User-Agent": "advx-monitor/1.0"})
+    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8"})
     return urllib.request.urlopen(req, timeout=timeout).read().decode("utf-8", "ignore")
 
 
