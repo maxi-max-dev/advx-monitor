@@ -15,6 +15,12 @@
    - WebFetch 官网 https://adventure-x.org 和 FAQ，看有无新公告/嘉宾/日程更新
    - 可选：本地 RSSHub 取官方 X `curl -s "http://localhost:1200/twitter/user/adventurex_plan"`（拿不到就跳过，别卡住）
    - 社媒热度：WebSearch `AdventureX 小红书`、`AdventureX 即刻`、`AdventureX 微博` 找参赛者/官方最新爆料
+   - 🔴 **小红书专项（这是深扫独有、NVIDIA 例行扫抓不到的重点）**：小红书没有可靠免费 feed，必须走真机。
+     - 先确认 adb 通：`adb devices`（应看到 127.0.0.1:5555 device；连不上先重启 BlueStacks 的 adbd，别硬卡）。
+     - 用 `~/code/xhs-research-conductor-staging` 里的 XHS 驱动/RUNBOOK（adb 深链驱动真 app），做两件事：
+       ① 盯官方号 **adventurex**（profile: https://www.xiaohongshu.com/user/profile/62d90f28000000000303c57b）有没有新笔记；
+       ② 关键词搜 **AdventureX** / **AdventureX 2026** 看参赛者最新爆料（嘉宾/日程/攻略/现场）。
+     - 抓到的按红线分级入库；小红书链接直接存原文 url。adb 起不来就记一句「小红书本轮没跑」到日志，别中断其他渠道。
 2. 对每条候选，先查是否已收录：`python3 feed.py stats`；用 `feed.py add` 自带 URL 去重，重复会返回 `dup`，不必自己比对。
 
 ## 分级红线（判定要狠，宁可丢也别塞噪音）
