@@ -31,5 +31,93 @@
     "source": "官方规则",
     "tag": "签到",
     "pushed": "digested"
+  },
+  {
+    "id": "944e09f7c35b",
+    "ts": "2026-07-21T21:26:55+08:00",
+    "tier": "MEDIUM",
+    "title": "Smart Youth 成为独家教育合作伙伴",
+    "summary": "公布独家教育合作伙伴 Smart Youth，创始人 Wentao 将参与",
+    "url": "https://x.com/adventurex_plan/status/2078082788188893646",
+    "source": "官方 X",
+    "tag": "媒体",
+    "pushed": "pending"
+  },
+  {
+    "id": "ff204e2faa2f",
+    "ts": "2026-07-21T21:26:55+08:00",
+    "tier": "MEDIUM",
+    "title": "Qoder 成为独家 AI 编程合作伙伴",
+    "summary": "公布独家 AI 编程合作伙伴 Qoder，提供开发工具支持",
+    "url": "https://x.com/adventurex_plan/status/2078067437002526917",
+    "source": "官方 X",
+    "tag": "媒体",
+    "pushed": "pending"
+  },
+  {
+    "id": "dc649126f6ed",
+    "ts": "2026-07-21T21:26:55+08:00",
+    "tier": "MEDIUM",
+    "title": "灵光 App 成为合作伙伴",
+    "summary": "公布灵光 App 为合作伙伴，助力创意落地",
+    "url": "https://x.com/adventurex_plan/status/2078051834233606368",
+    "source": "官方 X",
+    "tag": "媒体",
+    "pushed": "pending"
+  },
+  {
+    "id": "88f1a89e1ac1",
+    "ts": "2026-07-21T21:26:55+08:00",
+    "tier": "MEDIUM",
+    "title": "招商银行续任独家金融服务伙伴",
+    "summary": "招商银行回归担任独家金融服务合作伙伴",
+    "url": "https://x.com/adventurex_plan/status/2078036231531925535",
+    "source": "官方 X",
+    "tag": "媒体",
+    "pushed": "pending"
+  },
+  {
+    "id": "ee772e7ac2ce",
+    "ts": "2026-07-21T21:26:55+08:00",
+    "tier": "MEDIUM",
+    "title": "座椅合作伙伴提供舒适支持",
+    "summary": "公布座椅合作伙伴，为参赛者提供舒适体验",
+    "url": "https://x.com/adventurex_plan/status/2078005616178544926",
+    "source": "官方 X",
+    "tag": "媒体",
+    "pushed": "pending"
+  },
+  {
+    "id": "180ff8ccff95",
+    "ts": "2026-07-21T21:26:55+08:00",
+    "tier": "MEDIUM",
+    "title": "故事记录合作伙伴公布",
+    "summary": "公布合作伙伴负责记录黑客松全程故事",
+    "url": "https://x.com/adventurex_plan/status/2078004778513145872",
+    "source": "官方 X",
+    "tag": "媒体",
+    "pushed": "pending"
+  },
+  {
+    "id": "1eadaec97dd5",
+    "ts": "2026-07-21T21:26:55+08:00",
+    "tier": "MEDIUM",
+    "title": "湖畔创新中心连续三年作为场地",
+    "summary": "确认场地仍为湖畔创新中心，合作关系延续",
+    "url": "https://x.com/adventurex_plan/status/2078004105348325759",
+    "source": "官方 X",
+    "tag": "周边",
+    "pushed": "pending"
+  },
+  {
+    "id": "31269821eaf6",
+    "ts": "2026-07-21T21:26:55+08:00",
+    "tier": "MEDIUM",
+    "title": "AdventureX 将亮相 AWS 中国峰会开发者区",
+    "summary": "宣布参与 2026 AWS 中国峰会上海站开发者区，属于外部活动联动",
+    "url": "https://x.com/adventurex_plan/status/2066313118175621453",
+    "source": "官方 X",
+    "tag": "社区",
+    "pushed": "pending"
   }
 ]
