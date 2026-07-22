@@ -174,5 +174,49 @@
     "source": "小红书",
     "tag": "社区",
     "pushed": "digested"
+  },
+  {
+    "id": "2d6155018d67",
+    "ts": "2026-07-22T10:41:16+08:00",
+    "tier": "HIGH",
+    "title": "招商金葵花卡需现场激活才能领补贴/奖金",
+    "summary": "Marco Wang 7/21官宣:出行补贴+奖金自动打入招商金葵花借记卡,选手须于7/22-27到学术交流中心招行展位激活,激活后卡号自动同步组委会;不激活领不到钱。大陆成年选手直接办,越早办卡片可选",
+    "url": "feishu://advx-重要通知/金葵花开卡-20260721",
+    "source": "官方飞书群·重要通知",
+    "tag": "签到",
+    "pushed": "now"
+  },
+  {
+    "id": "99d896873c64",
+    "ts": "2026-07-22T10:41:16+08:00",
+    "tier": "MEDIUM",
+    "title": "重要通知将改用「小火」App推送",
+    "summary": "Marco Wang:之后重要通知可能不走邮件/群,改由「小火」推送(有rate limit分批发),留意别错过",
+    "url": "feishu://advx-创造者们/xiaohuo-push-20260719",
+    "source": "官方飞书群",
+    "tag": "签到",
+    "pushed": "pending"
+  },
+  {
+    "id": "25fa2fb0d29c",
+    "ts": "2026-07-22T10:41:16+08:00",
+    "tier": "MEDIUM",
+    "title": "选手物流指南:可提前邮寄行李到湖畔+现场行李柜",
+    "summary": "官方物流指南:行李装备可按唛头提前寄存湖畔,贵重物品随身;现场湖畔设多层行李柜,比去年好。到付会被拒收",
+    "url": "https://adventurex.feishu.cn/docx/RohhdJmaXoABo1xRQXtcqndQntf",
+    "source": "官方飞书群",
+    "tag": "签到",
+    "pushed": "pending"
+  },
+  {
+    "id": "356408fa3b6b",
+    "ts": "2026-07-22T10:41:16+08:00",
+    "tier": "MEDIUM",
+    "title": "Dimensional提供开源机器人系统+机器狗/机械臂支持",
+    "summary": "新合作伙伴Dimensional(硅谷创业公司)提供开源通用机器人操作系统,现场支持机器狗/机械臂二开,无硬件背景也能上手给agent造物理身体",
+    "url": "http://xhslink.com/o/3RXyzFb6oMM",
+    "source": "官方飞书群·交流群",
+    "tag": "社区",
+    "pushed": "pending"
   }
 ]
