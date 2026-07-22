@@ -152,5 +152,27 @@
     "source": "微博",
     "tag": "社区",
     "pushed": "digested"
+  },
+  {
+    "id": "5e5d392a250d",
+    "ts": "2026-07-22T09:31:55+08:00",
+    "tier": "MEDIUM",
+    "title": "Injective 续任链上合作伙伴",
+    "summary": "Injective(Layer1公链)继续合作,为AdventureX 2026提供链上开发方向资源;官方7/17发布,例行扫未收录",
+    "url": "https://x.com/adventurex_plan/status/2078117008973955222",
+    "source": "官方 X",
+    "tag": "社区",
+    "pushed": "pending"
+  },
+  {
+    "id": "7275269cb9c9",
+    "ts": "2026-07-22T09:31:55+08:00",
+    "tier": "MEDIUM",
+    "title": "小红书参赛者社区实况:组队/晒录取/审核进度为主",
+    "summary": "深扫小红书AdventureX关键词最新流:多为找队友帖/录取拒信晒图/审核进度讨论;一条吐槽'今年advx设计没那么有个性/品味';无嘉宾日程签到硬信息",
+    "url": "https://www.xiaohongshu.com/search_result?keyword=AdventureX",
+    "source": "小红书",
+    "tag": "社区",
+    "pushed": "pending"
   }
 ]
