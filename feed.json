@@ -218,5 +218,38 @@
     "source": "官方飞书群·交流群",
     "tag": "社区",
     "pushed": "digested"
+  },
+  {
+    "id": "71511caace69",
+    "ts": "2026-07-22T18:31:26+08:00",
+    "tier": "MEDIUM",
+    "title": "松灵机器人AgileX免费提供机械臂+机器人底盘+开发套件",
+    "summary": "松灵机器人(AgileX)为AdventureX参赛者免费提供机械臂+机器人底盘+开发套件,官方口径'总值15w+硬件支持,不用从零造机'",
+    "url": "https://www.xiaohongshu.com/search_result?keyword=AdventureX%20硬件&s=agilex",
+    "source": "官方小红书·松灵机器人",
+    "tag": "社区",
+    "pushed": "pending"
+  },
+  {
+    "id": "79b2aaa9e80e",
+    "ts": "2026-07-22T18:31:26+08:00",
+    "tier": "MEDIUM",
+    "title": "涂鸦智能Tuya提供全栈智能硬件+TuyaOpen开发框架",
+    "summary": "涂鸦智能免费提供开发板/触摸屏/LED点阵/圆形智能手表/T5-E1摄像头模组等全栈智能硬件+TuyaOpen SDK/IDE(支持Vibe Coding调大模型)",
+    "url": "https://www.xiaohongshu.com/search_result?keyword=AdventureX%20硬件&s=tuya",
+    "source": "官方小红书·涂鸦智能",
+    "tag": "社区",
+    "pushed": "pending"
+  },
+  {
+    "id": "7c6ae29612a5",
+    "ts": "2026-07-22T18:31:26+08:00",
+    "tier": "MEDIUM",
+    "title": "NVIDIA现场设展会/展位(需提前申请)",
+    "summary": "群内选手称NVIDIA今年现场有展会,但需提前申请;官方硬件/算力细节以小红书为准,5090主机算力为未证实传闻",
+    "url": "feishu://advx-交流群/nvidia-booth-20260714",
+    "source": "官方飞书群·社区转述",
+    "tag": "社区",
+    "pushed": "pending"
   }
 ]
