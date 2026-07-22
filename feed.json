@@ -261,7 +261,7 @@
     "url": "feishu://advx-重要通知/wifi-20260722",
     "source": "官方飞书群",
     "tag": "签到",
-    "pushed": "pending"
+    "pushed": "digested"
   },
   {
     "id": "89f1bfbfaea2",
@@ -272,6 +272,6 @@
     "url": "https://functorz.feishu.cn/wiki/DFdxwwzefil64Vkiaqocn2fWnXf",
     "source": "官方飞书群·交流群",
     "tag": "社区",
-    "pushed": "pending"
+    "pushed": "digested"
   }
 ]
