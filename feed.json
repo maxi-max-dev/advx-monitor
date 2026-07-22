@@ -251,5 +251,27 @@
     "source": "官方飞书群·社区转述",
     "tag": "社区",
     "pushed": "digested"
+  },
+  {
+    "id": "b316b2a5ba8b",
+    "ts": "2026-07-22T21:31:24+08:00",
+    "tier": "MEDIUM",
+    "title": "场内官方WiFi:ADVX-players/密码AdventureX,禁开个人热点",
+    "summary": "开幕日湖畔2.4G/5G严重过载,官方布AP要求连ADVX-players(密码AdventureX)并关闭所有个人热点/随身WiFi/路由器,否则全场掉线延迟飙升",
+    "url": "feishu://advx-重要通知/wifi-20260722",
+    "source": "官方飞书群",
+    "tag": "签到",
+    "pushed": "pending"
+  },
+  {
+    "id": "89f1bfbfaea2",
+    "ts": "2026-07-22T21:31:24+08:00",
+    "tier": "MEDIUM",
+    "title": "Zion Plugin参赛者专属:可控云后端+大额AI额度",
+    "summary": "赞助商Zion给参赛者专业版+充足AI Points(约2000万tokens输入/Gemini,近3000张Nano Banana生图,800秒Veo3.1视频),给Codex/Cursor/Claude Code接可交付后端;展位在学术交流中心中间",
+    "url": "https://functorz.feishu.cn/wiki/DFdxwwzefil64Vkiaqocn2fWnXf",
+    "source": "官方飞书群·交流群",
+    "tag": "社区",
+    "pushed": "pending"
   }
 ]
