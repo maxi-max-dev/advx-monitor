@@ -21,6 +21,11 @@
        ① 盯官方号 **adventurex**（profile: https://www.xiaohongshu.com/user/profile/62d90f28000000000303c57b）有没有新笔记；
        ② 关键词搜 **AdventureX** / **AdventureX 2026** 看参赛者最新爆料（嘉宾/日程/攻略/现场）。
      - 抓到的按红线分级入库；小红书链接直接存原文 url。adb 起不来就记一句「小红书本轮没跑」到日志，别中断其他渠道。
+   - 🔴 **官方飞书群专项（2026-07-22 Max 拍板加入，这是全网最高信号源、NVIDIA/小红书/X 都抓不到）**：Max 在的 7 个 AdventureX 飞书外部群，官方硬信息（签到/开卡/日程/嘉宾/物流）几乎都先在这里发。
+     - 工具：`~/.config/feishu-groupwatch/gw.py`。列群 `python3 gw.py chats`；拉某群近 N 小时 `python3 gw.py pull <chat_id> <hours>`（本任务用 1 即近 20min，保险用 2）。
+     - 要扫的群（外部群，chat_id 会变就用 `gw.py chats` 现查名字含 AdventureX/ADVX 的）：
+       重要通知 `oc_87e4eb3e36965540dd853af152308779`、活动日历 `oc_8c63fd42d64e7687b5c0b3513626849f`、交流群 `oc_487f71ba6699e09d420e7e26a20672b1`、创造者们 `oc_54fd8c345124773aa0f6d7e77eb4ffaf`、创造者们组队 `oc_b6d61735f110430c3d2c43be48a834e3`、审核没过者联盟 `oc_7a70943d0db7cfdc601161eb836f52b7`、AdventureX `oc_1413c50a5848b4d527927ab99c460aa5`。
+     - 判定：**只认 Marco Wang / 官方角色发的硬信息**（签到规则、开卡/领钱、日程场地变动、嘉宾、物流、通知渠道变更如「改走小火推送」）=HIGH；社区组队/打卡/迷路/闲聊全丢。官方文档链接（adventurex.feishu.cn/docx/...）直接存 url。
 2. 对每条候选，先查是否已收录：`python3 feed.py stats`；用 `feed.py add` 自带 URL 去重，重复会返回 `dup`，不必自己比对。
 
 ## 分级红线（判定要狠，宁可丢也别塞噪音）
