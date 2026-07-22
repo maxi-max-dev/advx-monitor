@@ -228,7 +228,7 @@
     "url": "https://www.xiaohongshu.com/search_result?keyword=AdventureX%20硬件&s=agilex",
     "source": "官方小红书·松灵机器人",
     "tag": "社区",
-    "pushed": "pending"
+    "pushed": "digested"
   },
   {
     "id": "79b2aaa9e80e",
@@ -239,7 +239,7 @@
     "url": "https://www.xiaohongshu.com/search_result?keyword=AdventureX%20硬件&s=tuya",
     "source": "官方小红书·涂鸦智能",
     "tag": "社区",
-    "pushed": "pending"
+    "pushed": "digested"
   },
   {
     "id": "7c6ae29612a5",
@@ -250,6 +250,6 @@
     "url": "feishu://advx-交流群/nvidia-booth-20260714",
     "source": "官方飞书群·社区转述",
     "tag": "社区",
-    "pushed": "pending"
+    "pushed": "digested"
   }
 ]
