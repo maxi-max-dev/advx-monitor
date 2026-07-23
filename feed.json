@@ -273,5 +273,38 @@
     "source": "官方飞书群·交流群",
     "tag": "社区",
     "pushed": "digested"
+  },
+  {
+    "id": "a11f443bab43",
+    "ts": "2026-07-23T09:31:09+08:00",
+    "tier": "HIGH",
+    "title": "2026赛道&主题正式公布(5主题/多赛道)",
+    "summary": "7/23早官方公布全部赛道及奖金方案(此前因奖金修改延迟);一队最多交6赛道但只做1个产品;主题偏隐喻需'阅读理解'",
+    "url": "https://adventurex.feishu.cn/share/base/view/shrcnDtHB7f5NTUAwMeiIJhNnNd",
+    "source": "官方飞书群·重要通知",
+    "tag": "日程",
+    "pushed": "now"
+  },
+  {
+    "id": "17c130e8e2d8",
+    "ts": "2026-07-23T09:31:09+08:00",
+    "tier": "MEDIUM",
+    "title": "硬件实验室7/23上午10点开放,预约全部重来",
+    "summary": "原定1am开放的硬件实验室因DDoS+系统调试延期,Marco定7/23上午10点开放;此前抢到的预约全作废需重新申请:United Portal线上预约→湖畔指引台签纸质借用协议→实验室领设备",
+    "url": "feishu://advx-重要通知/hwlab-reopen-20260723",
+    "source": "官方飞书群·重要通知",
+    "tag": "签到",
+    "pushed": "pending"
+  },
+  {
+    "id": "ac335b020e99",
+    "ts": "2026-07-23T09:31:09+08:00",
+    "tier": "MEDIUM",
+    "title": "United Portal开幕夜起遭持续DDoS攻击",
+    "summary": "官方事故报告:United Portal自开幕夜6点起遭持续恶意DDoS,选手无法访问系统致住宿/硬件领取延迟;Dev Team增购WAF恢复中,已ban机房IP;今晚入住选手延2h退房;全网无媒体报道纯内部事件",
+    "url": "feishu://advx-重要通知/portal-ddos-20260723",
+    "source": "官方飞书群·重要通知",
+    "tag": "媒体",
+    "pushed": "pending"
   }
 ]
