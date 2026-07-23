@@ -294,7 +294,7 @@
     "url": "feishu://advx-重要通知/hwlab-reopen-20260723",
     "source": "官方飞书群·重要通知",
     "tag": "签到",
-    "pushed": "pending"
+    "pushed": "digested"
   },
   {
     "id": "ac335b020e99",
@@ -305,6 +305,6 @@
     "url": "feishu://advx-重要通知/portal-ddos-20260723",
     "source": "官方飞书群·重要通知",
     "tag": "媒体",
-    "pushed": "pending"
+    "pushed": "digested"
   }
 ]
