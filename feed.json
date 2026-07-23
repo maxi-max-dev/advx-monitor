@@ -317,5 +317,38 @@
     "source": "微博",
     "tag": "周边",
     "pushed": "digested"
+  },
+  {
+    "id": "e9cc105b0b7b",
+    "ts": "2026-07-23T21:30:47+08:00",
+    "tier": "MEDIUM",
+    "title": "Workshop:蓝驰创投付强(John)开放AMA 7/24 13:30",
+    "summary": "7/24 13:30-14:00 湖畔创研中心公社1F,蓝驰投资合伙人付强(投过5家百亿美元公司)开放AMA,不宣讲不打分只聊真问题;问题征集已截止,现场可去听",
+    "url": "https://lanchi.feishu.cn/share/base/form/shrcnfUidHRbyV3AO85BK2fQQJd",
+    "source": "官方飞书群·重要通知",
+    "tag": "社区",
+    "pushed": "pending"
+  },
+  {
+    "id": "180ab8ae093f",
+    "ts": "2026-07-23T21:30:47+08:00",
+    "tier": "MEDIUM",
+    "title": "Terminal G 3D打印机开放使用(Bambu+AMS)",
+    "summary": "硬件实验室Terminal G一批3D打印机开放,配AMS自动进料;连WiFi AdvX-Lab-3DP-Hacker(令牌=Portal入场码,密码advx),状态页看空闲,Bambu Studio用IP+Access Code绑定;公用耗材在打印机两侧",
+    "url": "https://lab-3dp.advx.atlake.link/",
+    "source": "官方飞书群·重要通知",
+    "tag": "社区",
+    "pushed": "pending"
+  },
+  {
+    "id": "d85ff481fb7d",
+    "ts": "2026-07-23T21:30:47+08:00",
+    "tier": "MEDIUM",
+    "title": "中华网报道AdventureX 2026启幕(招行赋能)",
+    "summary": "7/23中华网发启幕报道'招商银行赋能AI技术新生代',属合作方PR向例行报道非重磅;确认现场有媒体采访,后续或有更多媒体稿",
+    "url": "https://digi.china.com/articles/20260723/202607231924446.html",
+    "source": "中华网",
+    "tag": "媒体",
+    "pushed": "pending"
   }
 ]
