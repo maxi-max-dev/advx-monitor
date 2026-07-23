@@ -327,7 +327,7 @@
     "url": "https://lanchi.feishu.cn/share/base/form/shrcnfUidHRbyV3AO85BK2fQQJd",
     "source": "官方飞书群·重要通知",
     "tag": "社区",
-    "pushed": "pending"
+    "pushed": "digested"
   },
   {
     "id": "180ab8ae093f",
@@ -338,7 +338,7 @@
     "url": "https://lab-3dp.advx.atlake.link/",
     "source": "官方飞书群·重要通知",
     "tag": "社区",
-    "pushed": "pending"
+    "pushed": "digested"
   },
   {
     "id": "d85ff481fb7d",
@@ -349,6 +349,6 @@
     "url": "https://digi.china.com/articles/20260723/202607231924446.html",
     "source": "中华网",
     "tag": "媒体",
-    "pushed": "pending"
+    "pushed": "digested"
   }
 ]
