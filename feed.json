@@ -361,5 +361,16 @@
     "source": "微博",
     "tag": "媒体",
     "pushed": "digested"
+  },
+  {
+    "id": "b2dd6e599b3f",
+    "ts": "2026-07-24T18:49:21+08:00",
+    "tier": "MEDIUM",
+    "title": "招商银行成为独家金融服务合作伙伴",
+    "summary": "招商银行以独家金融服务合作伙伴身份赞助大赛，属于赞助商公布。",
+    "url": "https://weibo.com/6072478686/RabodFOcy",
+    "source": "微博",
+    "tag": "媒体",
+    "pushed": "pending"
   }
 ]
