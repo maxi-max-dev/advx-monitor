@@ -350,5 +350,16 @@
     "source": "中华网",
     "tag": "媒体",
     "pushed": "digested"
+  },
+  {
+    "id": "7b72bc8481b0",
+    "ts": "2026-07-24T09:45:19+08:00",
+    "tier": "MEDIUM",
+    "title": "华硕官宣成为 AdventureX 合作伙伴",
+    "summary": "华硕将提供 ROG 笔记本、超算、显示器等全套设备支持黑客松创作，属赞助商公布。",
+    "url": "https://weibo.com/1747360663/Ra7Y8h6pj",
+    "source": "微博",
+    "tag": "媒体",
+    "pushed": "pending"
   }
 ]
